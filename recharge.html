@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/recharge.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="content">
+        <img class="big_img" src="image/充值.jpg">
+        <div class="number">
+            <div class="numbere_child">
+                <p>10<span>币</span></p>
+                <p>￥ 10.00</p>
+            </div>
+            <div class="numbere_child">
+                <p>20<span>币</span></p>
+                <p>￥ 20.00</p>
+            </div>
+            <div class="numbere_child">
+                <p>50<span>币</span></p>
+                <p>￥ 50.00</p>
+            </div>
+            <div class="numbere_child">
+                <p>100<span>币</span></p>
+                <p>￥ 100.00</p>
+            </div>
+            <div class="numbere_child">
+                <p>200<span>币</span></p>
+                <p>￥ 200.00</p>
+            </div>
+            <div class="numbere_child">
+                <p>500<span>币</span></p>
+                <p>￥ 500.00</p>
+            </div>
+        </div>
+        <div class="button">支付</div>
+        <div class="center">
+            <span></span>
+            <div class="cen_right">
+                同意春晓财经直播注册条款
+                <a>《用户使用和隐私协议》</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    (function (doc, win)
+    {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function ()
+            {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>

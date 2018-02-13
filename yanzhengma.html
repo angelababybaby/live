@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/yanzhengma.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="content">
+    <h2>输入手机号</h2>
+    <div class="text">
+        <p>短信发送失败，请点击重新获取短信</p>
+        <div class="again"><span>60</span>S后重新获取</div>
+        <form class="input-yzm">
+            <input type="number" name="" id="" value="" maxlength="1" class="input-juli"/>
+            <input type="number" name="" id="" value="" maxlength="1" class="input-juli" />
+            <input type="number" name="" id="" value="" maxlength="1" class="input-juli" />
+            <input type="number" name="" id="" value="" maxlength="1" class="input-juli" />
+            <input type="number" name="" id="" value="" maxlength="1" class="input-juli" />
+            <input type="number" name="" id="" value="" maxlength="1" class="input-juli" />
+        </form>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    (function (doc, win)
+    {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function ()
+            {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>

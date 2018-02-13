@@ -1,0 +1,488 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.rgba{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    z-index: 99999;
+}
+/*去绑定手机号的弹框*/
+.bangding{
+    display: none;
+}
+/*拉入黑名单*/
+.Blacklist{
+    display: none;
+}
+.room_close{
+    display: none;
+}
+.Blacklist .B_white{
+    height: 5.05rem;
+    padding-top: 0.3rem;
+    font-size: 0.28rem;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+.room_close .B_white{
+    margin-top: 2.5rem;
+    padding: 0.3rem 0 0.5rem 0;
+    text-align: center;
+
+}
+.room_close .B_white div{
+    text-align: left;
+    padding-left: 0.42rem;
+    display: flex;
+    color: #555555;
+    margin-top: 0.3rem;
+}
+.room_close .B_white div>span{
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+}
+.cl_s1{
+    background: url("../image/微信.png");
+    background-size: cover;
+}
+.cl_s2{
+    background: url("../image/电话.png");
+    background-size: cover;
+}
+
+.B_white{
+    width: 5.4rem;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 1rem auto;
+
+    font-size: 0.3rem;
+    color: #333333;
+
+}
+.bangding .B_white{
+    height: 6.52rem;
+    padding-top: 0.3rem;
+    text-align: center;
+}
+.rgba .B_white img{
+    width: 3.7rem;
+    height:2.6rem ;
+}
+.rgba .B_white h3{
+    margin-top:0.2rem ;
+    font-weight: normal;
+}
+.rgba .B_white p{
+    font-size: 0.2rem;
+}
+.rgba .B_white button{
+    width: 80%;
+    margin: 0.3rem auto;
+    height: 0.88rem;
+    text-align: center;
+    line-height:0.88rem;
+    background: #2D9FFF;
+    font-size: 0.4rem;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 0px 0px #1777c6;
+    outline: none;
+}
+.top{
+    margin-top: 0.2rem;
+}
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size:0.26rem;
+}
+.video{
+    width: 100%;
+    height:4.22rem;
+    background: purple;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.importent{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.div{
+    width: 90%;
+    height: 4.22rem;
+    background: powderblue;
+}
+
+.title{
+    display: flex;
+    height: 0.66rem;
+    line-height: 0.66rem;
+    border-bottom: 1px solid #E6E7EB;
+    color: #666666;
+    margin-top: 4.22rem;
+}
+.title_list{
+    width: 5.58rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.Personal_Center{
+    flex-grow: 1;
+    background: #EF4B4C;
+    display: flex;
+    color: #ffffff;
+    padding-left: 0.07rem;
+}
+.Personal_Center span{
+    padding-left: 0.1rem;
+}
+.title_list .active{
+    border-bottom: 0.04rem solid #EF4B4C;
+    color: #EF4B4C;
+}
+.head{
+    width: 0.5rem;
+    height: 0.5rem;
+
+}
+.head img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin-top: 0.05rem;
+}
+.parent .imBox{
+    display: none;
+}
+.parent .imBox:nth-child(1){
+    display: block;
+}
+.imBox{
+    width: 100%;
+}
+.imBox:nth-child(1){
+    background: #F2F3F7;
+}
+
+.padding{
+    padding: 0.17rem;
+}
+.footer{
+    width: 100%;
+    height: 1.076rem;
+    line-height: 1.076rem;
+    background: #ffffff;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer .putBox{
+    width: 6.1rem;
+    height: 100%;
+    border: 1px solid #e8e9ed;
+    border-radius: 50px;
+    display: flex;
+    padding-right: 0.2rem;
+}
+.footer .putBox>img{
+    margin-left: 0.2rem;
+    width: 0.38rem;
+    height: 0.38rem;
+    vertical-align: middle;
+    margin-top: 0.16rem;
+}
+.footer .putBox>input{
+    flex-grow: 1;
+    margin-left: 0.2rem;
+    border: none;
+    outline: none;
+    /*background: gainsboro;*/
+    border-radius: 8px;
+}
+.footer .gift{
+    flex-grow: 1;
+    text-align: center;
+}
+.gift img{
+    width: 0.66rem;
+    height: 0.66rem;
+    margin-top:0.04rem;
+}
+.imBox1{
+    /*padding: 0.17rem;*/
+    position: relative;
+}
+.position{
+    position: absolute;
+    margin: auto;
+}
+.closeBox{
+    width: 100%;
+    height: 1.19rem;
+    background: #ffffff;
+    box-shadow: 0px 6px 10px 0px rgba(45, 50, 59, 0.3);
+    /*border-radius: 0.08rem;*/
+    display: flex;
+    padding-left: 0.27rem;
+    /*z-index: 999;*/
+    border-top-left-radius: 0.08rem;
+    border-bottom-left-radius: 0.08rem;
+    border-bottom-right-radius: 0.08rem;
+    overflow: hidden;
+
+}
+.close_text{
+    color: #fff;
+    position: absolute;
+    right: 0.18rem;
+    top: 0.1rem;
+    z-index: 99;
+}
+.closeBox .closeDelete{
+    position: absolute;
+    color: #ffffff;
+    width:0;
+    height:0;
+    border-radius:0.3rem;
+    border-width:0.3rem;
+    border-style:solid;
+    border-color:transparent transparent transparent #B8B8B8;
+    transform: rotate(-45deg);
+    right: -0.135rem;
+    top: -0.13rem;
+    /* z-index: 1; */
+}
+.closeBox img{
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-top: 0.2rem;
+    border-radius: 50%;
+}
+.closeText{
+    flex-grow: 1;
+    padding: 0.2rem;
+}
+
+.closeText p:nth-child(1){
+    font-size: 0.3rem;
+    color: #333333;
+}
+.closeText p:nth-child(2){
+    margin-top: 0.08rem;
+    color: #666666;
+    width: 5.68rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.notice{
+    color:#EF4B4C;
+}
+.UserMessage{
+    width: 100%;
+    color: #2099ff;
+}
+.UserMessage span{
+    color: #333333;
+}
+.HostResponse{
+    background: #fff1d1;
+}
+.HostResponse{
+    width: 100%;
+    background: #fff1d1;
+    color: #333333;
+}
+.HostResponse img{
+    width: 0.72rem;
+}
+.HostResponse span{
+    color: #f96514;
+}
+.userGoin{
+    color: #2099ff;
+}
+.userGoin span{
+    color: #999999;
+}
+.give{
+    width: 100%;
+    color: #2099ff;
+}
+.give b{
+    color: #4d515c;
+}
+.give span{
+    color: #eb612b;
+    padding-left: 0.2rem;
+}
+.give p{
+    display: inline-block;
+    padding-left: 0.2rem;
+    height: 0.78rem;
+    background: paleturquoise;
+}
+.give img{
+    width: 0.6rem;
+    height:0.6rem;
+    vertical-align: middle;
+    margin-left: 0.2rem;
+}
+.give a{
+    color:#f96514;
+    margin-left: 0.2rem;
+}
+.give i{
+    font-size: 0.34rem;
+}
+.anchorNotice{
+    color:#f96514;
+}
+.anchorNotice span{
+    padding-left: 0.2rem;
+}
+.anchorNotice img{
+    width: 0.29rem;
+    height: 0.29rem;
+    vertical-align: middle;
+}
+/*排行榜*/
+.headBox{
+    padding: 0rem 0.26rem;
+}
+.headBox .head_child{
+    width: 100%;
+    border-bottom: 1px solid #F2F2F2;
+    display: flex;
+    padding: 0.17rem 0;
+}
+.headBox .head_child span{
+    display: block;
+    width: 0.51rem;
+    height: 0.69rem;
+    color:#979797;
+    margin-top: 0.2rem;
+    line-height: 0.69rem;
+    text-align: center;
+    font-size: 0.4rem;
+}
+.s1{
+    background: url("../image/金牌.png") no-repeat;
+    background-size: cover;
+}
+.s2{
+    background: url("../image/银牌.png") no-repeat;
+    background-size: cover;
+}
+.s3{
+    background: url("../image/铜牌.png") no-repeat;
+    background-size: cover;
+}
+.headBox .head_child img{
+    width:0.96rem;
+    height: 0.96rem;
+    border-radius: 50%;
+    margin-left: 0.25rem;
+}
+.headBox .head_child div{
+    flex-grow: 1;
+    font-size: 0.28rem;
+    color:#333;
+    padding-left: 0.3rem;
+}
+.headBox .head_child div>p{
+    padding: 0.1rem 0;
+}
+.headBox .head_child div>b{
+    color:#EB612B;
+    font-weight: normal;
+}
+/*详情*/
+.imBox_details{
+    padding: 0 0.26rem;
+}
+.details_head{
+    display: flex;
+    padding: 0.26rem 0 ;
+    border-bottom: 1px dashed #DEDEDE;
+}
+.details_head img{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+}
+.details_title{
+    flex-grow: 1;
+    font-size: 0.24rem;
+    padding-left: 0.2rem;
+
+}
+.details_title>b{
+    font-size: 0.3rem;
+    color: #333333;
+}
+.details_title p{
+    width: 100%;
+    margin-top: 0.1rem;
+    color: #555555;
+    height: 0.68rem;
+}
+.contact{
+    display: flex;
+    border-bottom:8px solid #F2F3F7;
+    padding: 0.2rem 0;
+}
+.contact div{
+    width: 50%;
+    text-align: center;
+    color: #555555;
+}
+.contact div:nth-child(1){
+    border-right: 1px dashed #DEDEDE;
+}
+.contact div>img{
+    width: 0.38rem;
+    height: 0.38rem;
+    vertical-align: middle;
+}
+/*详情/商品列表*/
+.shopList{
+    display: flex;
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #EEEEEE;
+}
+.shopList img{
+    width: 2rem;
+    height: 1.5rem;
+}
+.shopList div{
+    flex-grow: 1;
+    padding-left: 0.15rem;
+}
+.shopList div>b{
+    color: #333333;
+    font-size: 0.3rem;
+}
+.shopList div>p{
+    width: 100%;
+    color: #999999;
+    padding-top: 0.05rem;
+    height: 1.02rem;
+}

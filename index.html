@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>榜样店铺</title>
+</head>
+<script type="text/javascript">
+    (function (doc, win)
+    {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function ()
+            {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+<body>
+    <!--中间内容部分-->
+    <div class="content">
+        <!--视频模块-->
+        <div class="video"></div>
+        <!--公聊、排行榜、详情、还有三个大div-->
+        <div class="importent">
+            <!--<div class="div"></div>-->
+            <!--去绑定手机号这个弹框-->
+            <div class="bangding rgba">
+                <div class="B_white">
+                    <img src="image/提示绑定手机号.jpg">
+                    <h3>您还没有绑定您的手机号</h3>
+                    <p class="top">为保证您的账户安全</p>
+                    <p>送礼物前要绑定手机号哦~</p>
+                    <button>去绑定手机号</button>
+                </div>
+            </div>
+            <!--被主播拉入黑名单这个弹框-->
+            <div class="rgba Blacklist">
+                <div class="B_white">
+                    <img src="image/被加入黑名单提示.jpg">
+                    <h3>好遗憾！您已被主播拉入黑名单！</h3>
+                    <p class="top">您在此房间只能观看视频，不能</p>
+                    <p>发表言论跟送礼物</p>
+                </div>
+            </div>
+            <!--提示直播房间已经关闭-->
+            <div class="rgba room_close">
+                <div class="B_white">
+                    <img src="image/被加入黑名单提示.jpg">
+                    <h3>好遗憾！您的直播房间已关闭</h3>
+                    <p class="top">如果有需要，请联系客服</p>
+                    <div class="top"><span class="cl_s1"></span>&nbsp;Bangyangdianpu</div>
+                    <div><span class="cl_s2"></span>&nbsp;18655328975</div>
+                </div>
+            </div>
+            <!--title-->
+            <div class="title">
+                <div class="title_list">
+                    <span class="active">公聊</span>
+                    <span>排行榜</span>
+                    <span>详情</span>
+                </div>
+                <div class="Personal_Center">
+                    <div class="head"><img src="image/head.jpg"></div>
+                    <span>个人中心</span>
+                </div>
+            </div>
+            <div class="parent">
+                <!--第一个页面-->
+                <div class="imBox imBox1">
+                    <!--可点击关闭的-->
+                    <div class="position padding">
+                        <div class="closeBox">
+                            <!--关闭这个icon、-->
+                            <!--<div class="closeDelete"></div>-->
+                            <!--<span class="close_text">×</span>-->
+                            <img src="image/head.jpg">
+                            <div class="closeText">
+                                <p>榜样店铺</p>
+                                <p>2016年9月2日，彭博全球50大最具影响力人物12345</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--直播公告-->
+                    <div class="notice padding"><span></span>欢迎来到榜样店铺的直播间。春晓直播提倡健康的直播环境，对直播内容24h巡视。任何传播违法、违规、低俗等不良信息时将被封号</div>
+                    <!--用户消息-->
+                    <div class="UserMessage padding">即兴表演：<span>老师好呀~</span></div>
+                    <div class="UserMessage padding">快乐快乐：<span>老师稍等就来了哦~</span></div>
+                    <!--主播回复-->
+                    <div class="HostResponse padding">
+                        <img src="image/讲师.png">
+                        <span>林什看盘：</span>
+                        同学们下午好呀,改革开放以来，我们党之所
+                        以团结带领人民取得举世瞩目的发展成就。
+                    </div>
+                    <!--用户进入直播间-->
+                    <div class="userGoin padding">用户1235321 <span>进入直播间</span></div>
+                    <!--赠送礼物-->
+                    <div class="give padding">即兴表演：<b>赠送给主播</b><span>金福</span><img src="image/fu.png"><a>×<i>19</i></a></div>
+                    <!--主播公告-->
+                    <div class="anchorNotice padding"><img src="image/房间公告.png"><span>欢迎来到我的直播间哦～ 今天晚上19:00有大优惠！</span></div>
+                    <!--footer-->
+                    <div class="footer padding">
+                        <div class="putBox">
+                            <img src="image/表情.png">
+                            <input type="text" placeholder="说点什么吧~">
+                        </div>
+                        <div class="gift">
+                            <img src="image/礼物.png">
+                        </div>
+                    </div>
+                </div>
+                <!--排行榜-->
+                <div class="imBox">
+                    <div class="headBox">
+                        <!--1个-->
+                        <div class="head_child">
+                            <span class="s1"></span>
+                            <img src="image/head.jpg">
+                            <div>
+                                <p>我是卖报的小行家</p>
+                                <b>贡献值：333</b>
+                            </div>
+                        </div>
+                        <!--2-->
+                        <div class="head_child">
+                            <span class="s2"></span>
+                            <img src="image/head.jpg">
+                            <div>
+                                <p>小王子</p>
+                                <b>贡献值：333</b>
+                            </div>
+                        </div>
+                        <!--第三个-->
+                        <div class="head_child">
+                            <span class="s3"></span>
+                            <img src="image/head.jpg">
+                            <div>
+                                <p>可爱的小小</p>
+                                <b>贡献值：333</b>
+                            </div>
+                        </div>
+                        <!--第四个-->
+                        <div class="head_child">
+                            <span>4</span>
+                            <img src="image/head.jpg">
+                            <div>
+                                <p>哆啦A梦</p>
+                                <b>贡献值：333</b>
+                            </div>
+                        </div>
+                        <!--第五个-->
+                        <div class="head_child">
+                            <span>5</span>
+                            <img src="image/head.jpg">
+                            <div>
+                                <p>哆啦A梦</p>
+                                <b>贡献值：333</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--详情-->
+                <div class="imBox">
+                    <div class="imBox_details">
+                        <!--&lt;!&ndash;头像、店铺名、店铺介绍&ndash;&gt;-->
+                        <div class="details_head">
+                            <img src="image/head.jpg">
+                            <div class="details_title">
+                                <b>榜样店铺</b>
+                                <p>
+                                    我们提供优质的大米，安全、放心、有保障。我们的大米粒粒饱满，光泽
+                                    诱人，香糯可口，好吃不贵
+                                </p>
+                            </div>
+                        </div>
+                        <!--&lt;!&ndash;微信和手机号联系方式&ndash;&gt;-->
+                        <div class="contact">
+                            <div class="weixin"><img src="image/微信.png"> <span>Bangyangdianpu</span></div>
+                            <div class="tel"><img src="image/电话.png"><span>18655328975</span></div>
+                        </div>
+                        <!--&lt;!&ndash;商品列表&ndash;&gt;-->
+                        <div class="shopList">
+                            <img src="image/shop.jpg">
+                            <div>
+                                <b>口口相传</b>
+                                <p>口口相传，优质大米，安全放心有保障，我们只做有品质的食品。大米粒粒饱满，光泽鲜亮诱人，好吃不贵，值得信赖</p>
+                            </div>
+                        </div>
+                        <div class="shopList">
+                            <img src="image/shop.jpg">
+                            <div>
+                                <b>口口相传</b>
+                                <p>口口相传，优质大米，安全放心有保障，我们只做有品质的食品。大米粒粒饱满，光泽鲜亮诱人，好吃不贵，值得信赖</p>
+                            </div>
+                        </div>
+                        <div class="shopList">
+                            <img src="image/shop.jpg">
+                            <div>
+                                <b>口口相传</b>
+                                <p>口口相传，优质大米，安全放心有保障，我们只做有品质的食品。大米粒粒饱满，光泽鲜亮诱人，好吃不贵，值得信赖</p>
+                            </div>
+                        </div>
+                        <div class="shopList">
+                            <img src="image/shop.jpg">
+                            <div>
+                                <b>口口相传</b>
+                                <p>口口相传，优质大米，安全放心有保障，我们只做有品质的食品。大米粒粒饱满，光泽鲜亮诱人，好吃不贵，值得信赖</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/index.js"></script>

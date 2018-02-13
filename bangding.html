@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bangding.css">
+    <title>绑定手机号</title>
+</head>
+<body>
+    <div class="content">
+        <h2>输入手机号</h2>
+        <div class="phone">
+            <img src="image/bangding.png">
+            <input type="text">
+        </div>
+        <button>获取验证码</button>
+    </div>
+</body>
+</html>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bangding.js"></script>
+<script type="text/javascript">
+    (function (doc, win)
+    {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function ()
+            {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+
+</script>

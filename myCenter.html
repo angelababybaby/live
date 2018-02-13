@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/myCenter.css">
+    <title>Title</title>
+</head>
+<body>
+	<div class="content">
+		<div class="padding_left_right">
+			<!--头像-->
+			<div class="head padd_border">
+				<span>头像</span>
+				<img src="image/head.jpg" />
+			</div>
+			<div class="name padd_border">
+				<span>昵称</span>
+				<p>Maibhj</p>
+			</div>
+		</div>
+		<!---->
+		<div class="tel padd_border" id="bangding">
+			<span>手机号</span>
+			<a></a>
+		</div>
+		<div class="padding_left_right">
+			<!--虚拟币-->
+			<div class="padd_border">
+				<span>虚拟币</span>
+				<p>50</p>
+			</div>
+			<!--充值-->
+			<div class="padd_border" id="chongzhi">
+				<span>充值</span>
+				<a></a>
+			</div>
+			<div class="padd_border history" id="jilu">
+				<span>充值记录</span>
+				<a></a>
+			</div>
+		</div>
+		<!--联系客服-->
+		<div class="tel padd_border" id="customer">
+			<span>联系客服</span>
+			<a></a>
+		</div>
+		<button id="button">申请主播</button>
+		<div class="BombBox">
+			<div class="white_box">
+				<b>联系客服</b>
+				<p class="bottom_border" id="weixin"><img src="image/微信.png"> Bangyangdianpu</p>
+				<p><img src="image/电话.png" id="lianxi"> 18655328975</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/myCenter.js"></script>
+<script type="text/javascript">
+    (function (doc, win)
+        {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function ()
+            {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
